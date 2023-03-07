@@ -1,0 +1,48 @@
+
+* {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+}
+
+:root {
+  --bg-color-01: #EDFFC8;
+  --dark-color-01: #101010;
+  --accent-color-01:#2C54E4;
+}
+
+
+
+body {
+  background-color: var(--bg-color-01);
+  width: 1156px;
+}
+
+#sound {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+}
+
+.hey sound p {
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--accent-color-01);
+  
+}
+
+.hey h1 {
+  font-size: 52px;
+  line-height: 150%;
+  color: var(--dark-color-01);
+}
+
+li {
+  text-decoration: none;
+}
+#text ul li {
+  font-size: 40px;
+  line-height: 133%;
+  color: var(--dark-color-01);
+}
