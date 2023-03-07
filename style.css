@@ -17,11 +17,15 @@
 body {
   background-color: var(--bg-color-01);
   width: 1156px;
-  /* height: 100vw; */
+  min-height: 100vh;
+  margin: auto;
+  align-items: center;
+
 }
 
 .text {
-  margin: 320px auto 48px;
+  margin: 320px auto 24px;
+  /* align-items: center; */
   
 }
 
@@ -43,6 +47,7 @@ body {
 
 #hey img {
   padding-bottom: 5px;
+  cursor: pointer;
   
 }
 
@@ -61,14 +66,25 @@ body {
   display: flex;
   align-items:center;
   gap: 48px;
+
 }
 
 #links li {
   display: flex;
   align-items:center;
   gap: 8px;
+  cursor: pointer;
 
 }
+
+#links li:hover {
+  display: flex;
+  align-items:center;
+  gap: 12px;
+  cursor: pointer;
+
+}
+
 
 #links li a {
   font-size: 32px;
@@ -77,14 +93,5 @@ body {
   text-decoration: none;
   list-style: none;
   
-  /* text-decoration:underline; */
 }
 
-/* li {
-  text-decoration: none;
-}
-.text ul li {
-  font-size: 40px;
-  line-height: 133%;
-  color: var(--dark-color-01);
-} */
