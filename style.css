@@ -1,6 +1,7 @@
 
 * {
   margin: 0;
+  padding-inline-start: 0;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
 }
@@ -16,33 +17,74 @@
 body {
   background-color: var(--bg-color-01);
   width: 1156px;
+  /* height: 100vw; */
 }
 
-#sound {
+.text {
+  margin: 320px auto 48px;
+  
+}
+
+#hey {
   display: flex;
-  align-items: center;
+  align-items:center;
   gap: 16px;
 
 }
 
-.hey sound p {
+#hey p {
   font-size: 20px;
-  line-height: 140%;
+  line-height: 180%;
   color: var(--accent-color-01);
+
+  margin-bottom: 8px;
   
 }
 
-.hey h1 {
-  font-size: 52px;
-  line-height: 150%;
-  color: var(--dark-color-01);
+#hey img {
+  padding-bottom: 5px;
+  
 }
 
-li {
+.text h1 {
+  font-size: 48px;
+  line-height: 140%;
+  color: var(--dark-color-01);
+
+  margin-bottom: 88px;
+}
+
+#links {
+  list-style: none;
+  text-decoration:underline 3px;
+
+  display: flex;
+  align-items:center;
+  gap: 48px;
+}
+
+#links li {
+  display: flex;
+  align-items:center;
+  gap: 8px;
+
+}
+
+#links li a {
+  font-size: 32px;
+  color: var(--dark-color-01);
+
+  text-decoration: none;
+  list-style: none;
+  
+  /* text-decoration:underline; */
+}
+
+/* li {
   text-decoration: none;
 }
-#text ul li {
+.text ul li {
   font-size: 40px;
   line-height: 133%;
   color: var(--dark-color-01);
-}
+} */
