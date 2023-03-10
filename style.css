@@ -43,6 +43,7 @@ body {
   display: flex;
   align-items:center;
   gap: 1.6rem;
+  height: 42px;
 
 }
 
@@ -62,6 +63,16 @@ body {
   margin-bottom: 2px;
   cursor: pointer;
   
+}
+
+#hey button img {
+  width: 40px;
+  height: 40px;
+}
+
+#hey button img:hover {
+  width: 41px;
+  height: 41px;
 }
 
 .text h1 {
@@ -134,6 +145,8 @@ body {
 footer {
   margin-top: 200px;
   padding-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 
   display: flex;
   align-items:center;
@@ -141,10 +154,68 @@ footer {
 }
 
 
-/* media queries */
+
+
+/* media queries tablet */
+
+@media (max-width: 1200px) {
+
+
+  .text {
+    padding: 80px 24px 24px;
+    max-width: 800px;
+    /* align-items: center; */
+    
+  }
+
+  .text h1 {
+    font-size: 3.2rem;
+    line-height: 140%;
+    color: var(--dark-color-01);
+  
+    margin-bottom: 40px;
+  }
+
+  #links li {
+
+    display: flex;
+    margin-right: 4px;
+    gap: 8px;
+    cursor: pointer;
+  
+  }
+
+  #links li a {
+    font-size: 3.2rem;
+  }
+
+  #links li a:hover {
+    font-size: 3.2rem;
+  }
+  
+  #links li:hover {
+    margin-right: 0px;
+    gap: 12px;
+    color: var(--accent-color-01);
+  }
+
+  footer {
+    max-width: 800px;
+    margin-top: 200px;
+    /* padding: 0px 24px 16px; */
+  
+    display: flex;
+    align-items:center;
+    gap: 16px;
+  }
+}
+
+
+
+
+/* media queries mobile */
 
 @media (max-width: 700px) {
-
 
   .text {
     padding: 80px 24px 24px;
@@ -161,13 +232,29 @@ footer {
     margin-bottom: 40px;
   }
 
-  #links li {
+  #links {
+
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  #links li {
+
+    display: flex;
     margin-right: 4px;
     gap: 8px;
     cursor: pointer;
   
+  }
+
+  #links li a {
+    font-size: 2.4rem;
+  }
+
+  #links li a:hover {
+    font-size: 2.4rem;
   }
   
   #links li:hover {
@@ -176,8 +263,12 @@ footer {
     color: var(--accent-color-01);
   }
 
-
-
-
-
+  footer {
+    margin-top: 200px;
+    padding: 0px 24px 16px;
+  
+    display: flex;
+    align-items:center;
+    gap: 16px;
+  }
 }
