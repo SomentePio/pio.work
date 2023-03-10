@@ -148,6 +148,7 @@ footer {
 
   .text {
     padding: 80px 24px 24px;
+    max-width: 400px;
     /* align-items: center; */
     
   }
