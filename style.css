@@ -4,6 +4,7 @@
   padding-inline-start: 0;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
+  letter-spacing: -1px;
 }
 
 :root {
