@@ -15,7 +15,8 @@
   --dark-color-01: #101010;
   --accent-color-01:#2C54E4;
 
-  --icon-arrow: ;
+  --icon-arrow:url('./img/size=sm\,\ type=arrow.svg');
+  --icon-arrow-blue:url('./img/size=sm\,\ type=arrow\,azul.svg');
 }
 
 
@@ -140,7 +141,19 @@ body {
   text-decoration: none;
   list-style: none;
   
+  /* display: flex;
+  flex-direction: row; */
 }
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-image: var(--icon-arrow);
+}
+
+/* .arrow :hover {
+  background-image: var(--icon-arrow-blue);
+} */
 
 
 footer {
@@ -186,6 +199,12 @@ footer {
   
   }
 
+  #links li img {
+    width: 40px;
+    height: 40px;
+
+  }
+
   #links li a {
     font-size: 3.2rem;
   }
@@ -216,7 +235,7 @@ footer {
 
 /* media queries mobile */
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
 
   .text {
     padding: 80px 24px 24px;
