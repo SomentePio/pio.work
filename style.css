@@ -188,9 +188,12 @@ footer {
 
 @media (max-width: 1200px) {
 
-
+  main {
+    padding: 0 24px;
+  }
+  
   .text {
-    padding: 80px 24px 24px;
+    margin: 260px auto 24px;
     max-width: 800px;
     /* align-items: center; */
     
@@ -220,7 +223,7 @@ footer {
   }
 
   #links li a {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 
   #links li a:hover {
@@ -231,6 +234,13 @@ footer {
     margin-right: 0px;
     gap: 12px;
     color: var(--accent-color-01);
+  }
+
+  .arrow {
+    width: 32px;
+    height: 32px;
+    background-image: var(--icon-arrow);
+    background-size: cover;
   }
 
   footer {
@@ -250,6 +260,16 @@ footer {
 /* media queries mobile */
 
 @media (max-width: 720px) {
+
+
+  #hey p {
+    font-size: 1.6rem;
+    line-height: 180%;
+    color: var(--accent-color-01);
+  
+    margin-bottom: 12px;
+    
+  }
 
   .text {
     padding: 80px 24px 24px;
@@ -297,9 +317,41 @@ footer {
     color: var(--accent-color-01);
   }
 
+  .arrow {
+    width: 28px;
+    height: 28px;
+    background-image: var(--icon-arrow);
+    background-size: cover;
+  }
+
+  #hey p {
+    font-size: 1.6rem;
+    line-height: 180%;
+    color: var(--accent-color-01);
+  
+    margin-bottom: 12px;
+    
+  }
+  
+  #hey button {
+    border: none;
+    background: none;
+    padding-bottom: 6px;
+    margin-bottom: 2px;
+
+  }
+
+  #hey button img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
   footer {
     margin-top: 200px;
     padding: 0px 24px 16px;
+
+    font-size: 12px;
   
     display: flex;
     align-items:center;
