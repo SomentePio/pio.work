@@ -171,12 +171,17 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
+  font-size: 14px;
+
+
   display: flex;
   align-items:center;
   gap: 16px;
 }
 
-
+.link {
+  color: var(--accent-color-01);
+}
 
 
 /* media queries tablet */
