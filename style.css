@@ -2,8 +2,9 @@
 * {
   margin: 0;
   padding-inline-start: 0;
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 400;
+  font-family: var(--ff-primary);
+  /* font-family: 'JetBrains Mono', monospace; */
+  font-weight: var(--font-weight-regular);
   letter-spacing: -1px;
 }
 
@@ -11,9 +12,39 @@
 
   font-size: 62.5%;
 
-  --bg-color-01: #EDFFC8;
-  --dark-color-01: #101010;
-  --accent-color-01:#2C54E4;
+  --ff-primary: 'JetBrains Mono', monospace;
+
+  --font-size-tiny: 1.0rem;
+  --font-size-xxsm: 1.4rem;
+  --font-size-xsm: 1.6rem;
+  --font-size-sm: 2.0rem;
+  --font-size-display: 2.4rem;
+  --font-size-large: 3.2rem;
+  --font-size-xlarge: 4.8rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  --line-height-close: 140%;
+  --line-height-medium: 150%;
+  --line-height-far: 160%;
+  --line-height-far-away: 180%;
+
+  --bg-color-light: #F6FFE3;
+  --bg-color-default: #EDFFC8;
+  --bg-color-dark: #B2BF96;
+
+  
+  --neutral-color-lightest: #FEFEFE;
+  --neutral-color-light: #C3C3C3;
+  --neutral-color-dark: #1C1C1C;
+  --neutral-color-darkest: #101010;
+
+
+  --accent-color-default:#96A9F2;
+  --accent-color-default:#2C54E4;
+  --accent-color-dark:#213FAB;
 
   --icon-arrow:url('./img/size=sm\,\ type=arrow.svg');
   --icon-arrow-blue:url('./img/size=sm\,\ type=arrow\,azul.svg');
@@ -21,23 +52,18 @@
 
 
 body {
-  background-color: var(--bg-color-01);
+  background-color: var(--bg-color-default);
   max-width: 1156px;
-  /* height: 100vh; */
   margin: 0 auto;
   align-items: center;
 
-  font-size: 1.6rem;
+  font-size: var(--font-size-xsm);
 
 }
 
 button, a, img {
   cursor: pointer;
 }
-
-/* header{
-  padding-top: 40px;
-} */
 
 .text {
   margin: 400px auto 24px;
@@ -54,9 +80,10 @@ button, a, img {
 }
 
 #hey p {
-  font-size: 2.0rem;
-  line-height: 180%;
-  color: var(--accent-color-01);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-far-away);
+  color: var(--accent-color-default);
+  color: var(--accent-color-default);
 
   margin-bottom: 8px;
   
@@ -87,9 +114,9 @@ button, a, img {
 }
 
 .text h1 {
-  font-size: 4.8rem;
-  line-height: 140%;
-  color: var(--dark-color-01);
+  font-size: var(--font-size-xlarge);
+  line-height: var(--line-height-medium);
+  color: var(--neutral-color-darkest);
 
   margin-bottom: 40px;
 }
@@ -97,14 +124,16 @@ button, a, img {
 .hello {
   letter-spacing: -0px;
   text-decoration:underline 3px;
-  color: var(--accent-color-01);
+  color: var(--accent-color-default);
+  color: var(--accent-color-default);
   cursor: pointer;
 }
 
 .hello:hover {
   letter-spacing: 0.2px;
   text-decoration:underline 3px;
-  color: var(--accent-color-01);
+  color: var(--accent-color-default);
+  color: var(--accent-color-default);
   cursor: pointer;
 }
 
@@ -131,12 +160,13 @@ button, a, img {
 #links li:hover {
   margin-right: 0px;
   gap: 12px;
-  color: var(--accent-color-01);
+  color: var(--accent-color-default);
+  color: var(--accent-color-default);
 }
 
 #links li a {
-  font-size: 3.2rem;
-  color: var(--dark-color-01);
+  font-size: var(--font-size-large);
+  color: var(--neutral-color-darkest);
 
   text-decoration: none;
   list-style: none;
@@ -144,8 +174,9 @@ button, a, img {
 }
 
 #links li a:hover {
-  font-size: 3.2rem;
-  color: var(--accent-color-01);
+  font-size: var(--font-size-large);
+  color: var(--accent-color-default);
+  color: var(--accent-color-default);
 
   text-decoration: none;
   list-style: none;
@@ -171,7 +202,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
-  font-size: 14px;
+  font-size: var(--font-size-xxsm);
 
 
   display: flex;
@@ -180,7 +211,8 @@ footer {
 }
 
 .link {
-  color: var(--accent-color-01);
+  color: var(--accent-color-default);
+  color: var(--accent-color-default);
 }
 
 
@@ -200,9 +232,9 @@ footer {
   }
 
   .text h1 {
-    font-size: 3.2rem;
-    line-height: 140%;
-    color: var(--dark-color-01);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-medium);
+    color: var(--neutral-color-darkest);
   
     margin-bottom: 40px;
   }
@@ -223,17 +255,18 @@ footer {
   }
 
   #links li a {
-    font-size: 2.4rem;
+    font-size: var(--font-size-display);
   }
 
   #links li a:hover {
-    font-size: 3.2rem;
+    font-size: var(--font-size-display);
   }
   
   #links li:hover {
     margin-right: 0px;
     gap: 12px;
-    color: var(--accent-color-01);
+    color: var(--accent-color-default);
+    color: var(--accent-color-default);
   }
 
   .arrow {
@@ -263,9 +296,10 @@ footer {
 
 
   #hey p {
-    font-size: 1.6rem;
-    line-height: 180%;
-    color: var(--accent-color-01);
+    font-size: var(--font-size-xsm);
+    line-height: var(--line-height-far-away);
+    color: var(--accent-color-default);
+    color: var(--accent-color-default);
   
     margin-bottom: 12px;
     
@@ -279,9 +313,9 @@ footer {
   }
 
   .text h1 {
-    font-size: 2.4rem;
-    line-height: 140%;
-    color: var(--dark-color-01);
+    font-size: var(--font-size-display);
+    line-height: var(--line-height-medium);
+    color: var(--neutral-color-darkest);
   
     margin-bottom: 40px;
   }
@@ -304,17 +338,18 @@ footer {
   }
 
   #links li a {
-    font-size: 2.4rem;
+    font-size: var(--font-size-display);
   }
 
   #links li a:hover {
-    font-size: 2.4rem;
+    font-size: var(--font-size-display);
   }
   
   #links li:hover {
     margin-right: 0px;
     gap: 12px;
-    color: var(--accent-color-01);
+    color: var(--accent-color-default);
+    color: var(--accent-color-default);
   }
 
   .arrow {
@@ -325,9 +360,10 @@ footer {
   }
 
   #hey p {
-    font-size: 1.6rem;
-    line-height: 180%;
-    color: var(--accent-color-01);
+    font-size: var(--font-size-xsm);
+    line-height: var(--line-height-far-away);
+    color: var(--accent-color-default);
+    color: var(--accent-color-default);
   
     margin-bottom: 12px;
     
@@ -351,7 +387,7 @@ footer {
     margin-top: 200px;
     padding: 0px 24px 16px;
 
-    font-size: 12px;
+    font-size: var(--font-size-tiny);
   
     display: flex;
     align-items:center;
